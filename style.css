@@ -3,3 +3,24 @@
           padding: 0;
           box-sizing: border-box;
 }
+
+section{
+          width: 100%;
+          height: 100vh;
+          background-image: url(./image/bg.jpg);
+          background-size: cover;
+          position: relative;
+}
+
+section::before{
+          content: '';
+          width: 100%;
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: url(./image/splash.jpg);
+          background-size: cover;
+          mix-blend-mode: screen;
+          background-position: center;
+}
